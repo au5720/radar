@@ -8,9 +8,10 @@
       (count page))
     (catch Exception e 0)))
 
+
 (deftest website
   (testing "That we have a default webpage for RADAR"
-    (is (= 0 1))))
+    (is (> (count-webpage-size "http://localhost") 0))))
 
 
 
